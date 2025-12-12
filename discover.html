@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RIZE — Discover</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">RZ</div>
+        <div>
+          <div style="font-weight:800">RIZE</div>
+          <div style="font-size:12px;color:var(--muted)">Propulse les talents</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:8px;">
+        <button class="btn"><a href="index.html" style="color: #111; text-decoration:none;">home</a></button>
+        <button class="btn ghost"><a href="profile.html" style="color: #111; text-decoration:none;">profile</a></button>
+      </div>
+    </header>
+
+    <div class="discover-body">
+      <div class="discover-header">
+        <button class="back-btn">←</button>
+        <h2>Découvrir des Talents</h2>
+      </div>
+
+      <div class="discover-grid" id="discover-grid">
+        <!-- Cards will be populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="discover.js"></script>
+</body>
+</html>

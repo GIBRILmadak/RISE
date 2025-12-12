@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RIZE — Talents</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">RZ</div>
+        <div>
+          <div style="font-weight:800">RIZE</div>
+          <div style="font-size:12px;color:var(--muted)">Propulse les talents</div>
+        </div>
+      </div>
+
+      <div class="header-controls" style="flex:1; margin-left:12px;">
+        <div style="display:flex;gap:8px;align-items:center;">
+          <button class="btn"><a href="index.html" style="color: #111; text-decoration:none;">feed</a></button>
+          <button class="btn ghost"><a href="discover.html" style="color: #111; text-decoration:none;">discover</a></button>
+        </div>
+        <div class="searchbar" style="max-width:420px;">
+          <input placeholder="Rechercher talents, musiques..." />
+        </div>
+      </div>
+
+      <div style="margin-left:12px;">
+        <button class="btn"><a href="login.html" style="color: #111; text-decoration:none;">Connexion</a></button>
+      </div>
+    </header>
+
+    <div class="talent-body">
+      <div class="talent-header">
+        <h2>Sélectionnez vos Talents</h2>
+        <p>Choisissez les compétences et domaines qui vous intéressent</p>
+      </div>
+
+      <div class="talent-tree">
+        <!-- Art et création -->
+        <div class="talent-category">
+          <div class="category-header">
+            <span class="category-toggle">▶</span>
+            <span class="category-name">Art et création</span>
+          </div>
+          <div class="subcategory hidden">
+            <div class="subcategory-header">
+              <span class="subcategory-toggle">▶</span>
+              <span class="subcategory-name">Musique</span>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="music">
+              <label for="music" class="talent-name">Musique</label>
+            </div>
+            <div class="subcategory-header">
+              <span class="subcategory-toggle">▶</span>
+              <span class="subcategory-name">Art visuel</span>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="art-visuel">
+              <label for="art-visuel" class="talent-name">Art visuel</label>
+            </div>
+            <div class="subcategory-header">
+              <span class="subcategory-toggle">▶</span>
+              <span class="subcategory-name">Danse</span>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="dance">
+              <label for="dance" class="talent-name">Danse</label>
+            </div>
+            <div class="subcategory-header">
+              <span class="subcategory-toggle">▶</span>
+              <span class="subcategory-name">Théâtre</span>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="theatre">
+              <label for="theatre" class="talent-name">Théâtre</label>
+            </div>
+            <div class="subcategory-header">
+              <span class="subcategory-toggle">▶</span>
+              <span class="subcategory-name">Écriture</span>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="ecriture">
+              <label for="ecriture" class="talent-name">Écriture</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Création numérique et tech -->
+        <div class="talent-category">
+          <div class="category-header">
+            <span class="category-toggle">▶</span>
+            <span class="category-name">Création numérique et tech</span>
+          </div>
+          <div class="subcategory hidden">
+            <div class="subcategory-header">
+              <span class="subcategory-toggle">▶</span>
+              <span class="subcategory-name">Développement</span>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="html">
+              <label for="html" class="talent-name">HTML</label>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="css">
+              <label for="css" class="talent-name">CSS</label>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="javascript">
+              <label for="javascript" class="talent-name">JavaScript</label>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="react">
+              <label for="react" class="talent-name">React</label>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="python">
+              <label for="python" class="talent-name">Python</label>
+            </div>
+            <div class="subcategory-header">
+              <span class="subcategory-toggle">▶</span>
+              <span class="subcategory-name">IA</span>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="ia">
+              <label for="ia" class="talent-name">Intelligence Artificielle</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sport et activités -->
+        <div class="talent-category">
+          <div class="category-header">
+            <span class="category-toggle">▶</span>
+            <span class="category-name">Sport et activités</span>
+          </div>
+          <div class="subcategory hidden">
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="football">
+              <label for="football" class="talent-name">Football</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="basketball">
+              <label for="basketball" class="talent-name">Basketball</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="tennis">
+              <label for="tennis" class="talent-name">Tennis</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="fitness">
+              <label for="fitness" class="talent-name">Fitness</label>
+            </div>
+            <div class="subcategory-header">
+              <span class="subcategory-toggle">▶</span>
+              <span class="subcategory-name">Gaming</span>
+            </div>
+            <div class="talent-item hidden">
+              <input type="checkbox" class="talent-checkbox" id="gaming">
+              <label for="gaming" class="talent-name">Gaming</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sciences et recherche -->
+        <div class="talent-category">
+          <div class="category-header">
+            <span class="category-toggle">▶</span>
+            <span class="category-name">Sciences et recherche</span>
+          </div>
+          <div class="subcategory hidden">
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="math">
+              <label for="math" class="talent-name">Mathématiques</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="physique">
+              <label for="physique" class="talent-name">Physique</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="ingenieur">
+              <label for="ingenieur" class="talent-name">Ingénierie</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="medecine">
+              <label for="medecine" class="talent-name">Médecine</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business et investissement -->
+        <div class="talent-category">
+          <div class="category-header">
+            <span class="category-toggle">▶</span>
+            <span class="category-name">Business et investissement</span>
+          </div>
+          <div class="subcategory hidden">
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="entrepreneur">
+              <label for="entrepreneur" class="talent-name">Entrepreneuriat</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="marketing">
+              <label for="marketing" class="talent-name">Marketing</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="finance">
+              <label for="finance" class="talent-name">Finance</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Médias et communication -->
+        <div class="talent-category">
+          <div class="category-header">
+            <span class="category-toggle">▶</span>
+            <span class="category-name">Médias et communication</span>
+          </div>
+          <div class="subcategory hidden">
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="blogging">
+              <label for="blogging" class="talent-name">Blogging/Vlogging</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="consulting">
+              <label for="consulting" class="talent-name">Consulting</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="langues">
+              <label for="langues" class="talent-name">Langues</label>
+            </div>
+            <div class="talent-item">
+              <input type="checkbox" class="talent-checkbox" id="streaming">
+              <label for="streaming" class="talent-name">Streaming</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:24px;">
+        <button class="btn submit-btn">Sauvegarder mes talents</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="talent.js"></script>
+</body>
+</html>
